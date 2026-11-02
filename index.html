@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bloodborne - Hunt Your Nightmares</title>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts para tipografías góticas -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <!-- Enlace a tu hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to the internet</h1>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-cross logo-icon"></i>
+            <span>BLOODBORNE</span>
+        </a>
+        <div class="nav-links">
+            <a href="#lore">Lore</a>
+            <a href="#armas">Armas</a>
+            <a href="#jefes">Jefes</a>
+        </div>
+        <a href="#comprar" class="btn btn-outline">Unirse a la Cacería</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">Acepta la Transfusión de Sangre</p>
+            <h1 class="title">CAZA TUS PESADILLAS</h1>
+            <p class="description">
+                Adéntrate en la arruinada ciudad de Yharnam, donde una extraña plaga se extiende como el fuego. 
+                Armado con la Cuchilla Trucada y tu ingenio, busca la Sangre Pálida para trascender la caza.
+            </p>
+            <div class="hero-buttons">
+                <a href="#comprar" class="btn btn-primary">Comprar Ahora</a>
+                <a href="#lore" class="btn btn-secondary">Explorar Yharnam</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Lore -->
+    <section id="lore" class="section lore-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>La Maldición de Yharnam</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <i class="fa-solid fa-skull card-icon"></i>
+                    <h3>La Plaga</h3>
+                    <p>Una enfermedad endémica que transforma a los habitantes de Yharnam en bestias horrendas incapaces de recordar su propia humanidad.</p>
+                </div>
+                <div class="card">
+                    <div class="card-highlight"></div>
+                    <i class="fa-solid fa-eye card-icon"></i>
+                    <h3>La Lucidez</h3>
+                    <p>A medida que la Noche de la Cacería avanza, el velo entre la realidad y los Grandes Antiguos se vuelve peligroso e inexorablemente delgado.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-moon card-icon"></i>
+                    <h3>La Noche</h3>
+                    <p>Una cacería interminable bajo una luna roja sangrienta. Los cazadores caen uno tras otro, atrapados en un sueño del que no hay retorno.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Armas Trucadas -->
+    <section id="armas" class="section weapons-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Armas Trucadas</h2>
+                <p>Mecanismos ingeniosos para el combate visceral de cerca</p>
+                <div class="divider"></div>
+            </div>
+            <div class="grid grid-2">
+                <div class="weapon-card">
+                    <div class="weapon-info">
+                        <h3>Cuchilla Trucada</h3>
+                        <span class="badge">Corte Rápido / Gran Alcance</span>
+                        <p>El símbolo de los cazadores. Puede usarse como una sierra corta o desplegarse para infligir mayor daño a distancia contra las bestias masivas.</p>
+                    </div>
+                </div>
+                <div class="weapon-card">
+                    <div class="weapon-info">
+                        <h3>Hacha del Cazador</h3>
+                        <span class="badge">Fuerza / Desequilibrio</span>
+                        <p>Retiene la capacidad de transformarse en una hacha a dos manos. Ideal para mantener a raya a grupos de bestias enfurecidas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Comprar -->
+    <section id="comprar" class="section cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container cta-content">
+            <h2>¿Escuchas el Llamado de la Sangre?</h2>
+            <p>Disponible para PlayStation 4 y PlayStation 5 (Retrocompatible).</p>
+            <button class="btn btn-primary btn-large">Obtener Game of the Year Edition</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 FromSoftware, Inc. / Sony Interactive Entertainment Inc. Landing Page Fan-Made.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-playstation"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
